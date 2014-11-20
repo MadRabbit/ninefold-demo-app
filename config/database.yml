@@ -19,10 +19,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: deploy-test_production
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: root
-  password:
+  timeout: 5000
